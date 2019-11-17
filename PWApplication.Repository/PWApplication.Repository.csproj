@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191111135211_initial.cs" />
+    <Compile Remove="Migrations\20191111135211_initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore" Version="3.0.0" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PWApplication.Domain\PWApplication.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
